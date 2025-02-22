@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  @apply bg-white text-black;
+}
+body.dark {
+  @apply bg-gray-900 text-white;
+}
+nav ul li {
+  @apply text-gray-700 dark:text-gray-300 hover:text-blue dark:hover:text-yellow-400;
+}
+a {
+  /* font-weight: 720; */
+  @apply font-bold hover:underline;
+}
+
+@layer utilities {
+  /* a{
+    @apply font-semibold
+  } */
+
+  .logoText {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    /* color: #4CAF50; */
+  }
+
+  .h1Text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 28px;
+    letter-spacing: 0.012em;
+    text-transform: capitalize;
+  }
+
+  .h1TextLg {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 63px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+  }
+
+  .h2Text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+  }
+  .h2TextLg {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+  }
+
+  .aboutImgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    width: 258.78px;
+    height: 283.29px;
+    background: #ffffff;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.2);
+  }
+  .pText {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+  }
+  .pTextLg {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+  }
+}
