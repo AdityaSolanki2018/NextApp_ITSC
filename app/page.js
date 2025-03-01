@@ -28,20 +28,20 @@ export default function Home() {
 
       <div className="text-white max-w-[780px] my-24 md:my-56 mx-8 md:mx-20 lg:mx-32 border-l-4 pl-2 md:pl-5 border-solarYellow">
         <h1 className="h1Text  md:h1TextLg motion-preset-slide-left">
-          Harness the Sun, {""}
+          One Stop {""}
           <br />
           <span className="text-solarYellow hover:motion-preset-pop motion-duration-2000">
-            Power{" "}
+            Solution{" "}
           </span>
-          Your
+          For All Your
           <span className="text-solarYellow hover:motion-preset-pop motion-duration-2000">
             {" "}
-            Future!{" "}
+            IT Needs!{" "}
           </span>
         </h1>
         <h2 className="h2Text md:h2TextLg mt-1 motion-preset-blur-right motion-duration-2000">
-          Let the Sun Work for You <br className="hidden md:block" />
-          Sustainable Power, Everyday Savings!{" "}
+          We provide most reliable <br className="hidden md:block" />
+          Security, Networking and IT infrastructure Solutions.{" "}
         </h2>
         <div className="flex items-center gap-3 md:gap-5 my-4">
           <Link href={"/contactus"}>

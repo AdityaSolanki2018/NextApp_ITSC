@@ -54,7 +54,7 @@ function contact() {
         {/* Contact Details Cards */}
         <div className="flex flex-col text-gray-900 dark:text-white md:grid md:grid-cols-2 md:gap-6 gap-3 *:flex *:flex-col *:gap-2 *:items-center *:justify-center px-16 md:px-36 w-fit mx-auto *:md:w-[400px] text-center *:p-5 *:h-[220px]">
           {/* Address Card */}
-          <span className="bg-deepTeal dark:bg-darkBlue rounded-md transform transition-transform duration-300 ease-in-out hover:scale-110 shadow-lg hover:shadow-solarYellow/40">
+          <span className="bg-lightBlue dark:bg-lightBlue rounded-md transform transition-transform duration-300 ease-in-out hover:scale-110 shadow-lg hover:shadow-solarYellow/40">
             <Image
               src="/icons/addresssvg.svg"
               width={40}
@@ -64,12 +64,12 @@ function contact() {
             <h1 className="h1Text mt-2">Address</h1>
             <p className="pText">Company Regd. Address</p>
             <span className="pText">
-              F-12 Ground Floor, Viswakarma Colony, New Delhi 110044 (India)
+              B-210, Veer Complex, Green Field Colony, Faridabad, Haryana - 121010 (India)
             </span>
           </span>
 
           {/* Phone Number Card */}
-          <span className="bg-green dark:bg-gray-700 rounded-md transform transition-transform duration-300 ease-in-out hover:scale-110 shadow-lg hover:shadow-solarYellow/40">
+          <span className="bg-blue dark:blue rounded-md transform transition-transform duration-300 ease-in-out hover:scale-110 shadow-lg hover:shadow-solarYellow/40">
             <Image
               src="/icons/Phone.svg"
               width={40}
@@ -77,12 +77,12 @@ function contact() {
               alt="Phone Icon"
             />
             <h1 className="h1Text mt-2">Phone Number</h1>
-            <p className="pText">Enquiry: 9312644140</p>
-            <p className="pText">Customer Support: 9289013290, 9289014204</p>
+            <p className="pText">Enquiry: 9818646026</p>
+            <p className="pText">Customer Support: 7827124622</p>
           </span>
 
           {/* Email Card */}
-          <span className="bg-deepTeal dark:bg-gray-800 rounded-md transform transition-transform duration-300 ease-in-out hover:scale-110 shadow-lg hover:shadow-solarYellow/40">
+          <span className="bg-blue dark:bg-blue rounded-md transform transition-transform duration-300 ease-in-out hover:scale-110 shadow-lg hover:shadow-solarYellow/40">
             <Image
               src="/icons/emailsvg.svg"
               width={40}
@@ -90,11 +90,11 @@ function contact() {
               alt="Email Icon"
             />
             <h1 className="h1Text mt-2">Email</h1>
-            <p className="pText">contactbdbvpl@gmail.com</p>
+            <p className="">mahesh.solanki@gmail.com</p>
           </span>
 
           {/* Timings Card */}
-          <span className="bg-green dark:bg-gray-700 rounded-md transform transition-transform duration-300 ease-in-out hover:scale-110 shadow-lg hover:shadow-solarYellow/40">
+          <span className="bg-lightBlue dark:bg-lightBlue rounded-md transform transition-transform duration-300 ease-in-out hover:scale-110 shadow-lg hover:shadow-solarYellow/40">
             <Image
               src="/icons/timingsvg.svg"
               width={50}
