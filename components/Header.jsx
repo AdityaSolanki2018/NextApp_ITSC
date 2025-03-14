@@ -353,24 +353,25 @@ const Header = () => {
               </Link>
             </li>
             <li className="hover:text-blue dark:hover:text-yellow-400 transition">
-              <Link href="/aboutus" onClick={toggleMenu}>
+              <Link href="/about" onClick={toggleMenu}>
                 About Us
               </Link>
             </li>
-            {pathName === "/" && (
+            <li className="hover:text-blue dark:hover:text-yellow-400 transition">
+              <Link href="/gallery" onClick={toggleMenu}>
+                Gallary
+              </Link>
+            </li>
+            <li className="hover:text-blue dark:hover:text-yellow-400 transition">
+              <Link href="/contact" onClick={toggleMenu}>
+                Contact Us
+              </Link>
+            </li>
+            {/* {pathName === "/" && (
               <>
-                <li className="hover:text-blue dark:hover:text-yellow-400 transition">
-                  <Link href="#" onClick={toggleMenu}>
-                    Services
-                  </Link>
-                </li>
-                <li className="hover:text-blue dark:hover:text-yellow-400 transition">
-                  <Link href="/gallery" onClick={toggleMenu}>
-                    Gallery
-                  </Link>
-                </li>
+                
               </>
-            )}
+            )} */}
             <li>
               <Link href="/">
                 <Button text="Let's Talk" />

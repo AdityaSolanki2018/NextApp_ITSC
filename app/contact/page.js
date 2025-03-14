@@ -11,11 +11,11 @@ function contact() {
     <div className="min-h-screen relative overflow-hidden dark:bg-gray-900">
       {/* Hero Section with Dark Mode Gradient */}
       <Image
-        src="/images/herobg2.png"
+        src="/images/herobg1.png"
         width={720}
         height={400}
         alt="img"
-        className="-z-30 absolute w-full -top-4 h-[380px] md:min-h-[550px] blur-sm opacity-90 dark:opacity-70"
+        className="-z-30 absolute w-full -top-4 h-[380px] md:min-h-[550px] blur-sm opacity-90 dark:opacity-90"
       />
 
       <div className="absolute lg:-top-[78px] -top-[140px] -left-6 -right-5 z-10">
@@ -33,7 +33,7 @@ function contact() {
         <div className="flex divide-x-4 divide-solarYellow *:px-3 md:h2TextLg h2Text">
           <Link
             href="/"
-            className="text-gray-800 dark:text-gray-300 hover:text-solarYellow transition"
+            className="text-gray-300 dark:text-gray-300 hover:text-solarYellow transition"
           >
             Home
           </Link>

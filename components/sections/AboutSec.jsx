@@ -12,19 +12,18 @@ const AboutSec = () => {
         h2={
           <ul>
             <li className="my-3">
-              At <Link href={"/aboutus"}>BDB Ventures Pvt. Ltd.</Link>, our
+              At <Link href={"/aboutus"}>IT Solutions and Consultancy</Link>, our
               mission is to make{" "}
               <a
                 target="_blank"
                 href="https://en.wikipedia.org/wiki/Solar_energy"
               >
-                renewable solar energy
+                help your business go digital
               </a>{" "}
-              the standard for homes and businesses.
+              by providing the best IT services.
             </li>
             <li className="mb-3">
-              We transform energy consumption with innovative and affordable
-              solar solutions tailored to your needs.
+              We transform your business by provining the best secutity, networking and server support.
             </li>
           </ul>
         }

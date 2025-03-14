@@ -44,7 +44,7 @@ export default function Home() {
           Security, Networking and IT infrastructure Solutions.{" "}
         </h2>
         <div className="flex items-center gap-3 md:gap-5 my-4">
-          <Link href={"/contactus"}>
+          <Link href={"/contact"}>
             <Button text={"let's talk"} />
           </Link>
           <button className=" text-solarYellow hover:animate-pulse border border-solarYellow rounded-full p-2.5">
@@ -53,7 +53,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="md:flex my-24 dark:bg-gray-900 items-center gap-10 ">
+      {/* <div className="md:flex my-24 dark:bg-gray-900 items-center gap-10 ">
         <div className="aboutImgContainer dark:bg-darkBlue lg:w-[350px] lg:h-[400px]  mx-10 relative motion-preset-slide-right mb-10">
           <Image
             src={"/images/abiutImg.avif"}
@@ -73,6 +73,25 @@ export default function Home() {
         <div className="w-full mt-[100px] sm:mt-10">
           <AboutSec />
         </div>
+      </div> */}
+      <div className="md:flex my-24 dark:bg-gray-900 items-center gap-10">
+         <div className="aboutImgContainer dark:bg-darkBlue lg:w-[350px] lg:h-[400px] mx-10 relative motion-preset-slide-right mb-10">
+           <Image
+            src="/images/aboutImg.avif"
+            width={240}
+            height={240}
+            alt="About Image"
+            className="w-full h-fit transform transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-text/50"
+          />
+          <div className="absolute -bottom-12 -right-8 bg-[#FAFAFA] dark:bg-gray-800 rounded-full w-30 h-30 p-1 *:pt-4 capitalize text-wrap shadow text-center text-white">
+            <div className="transform transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-text/50 bg-solarYellow dark:bg-yellow-500 rounded-full w-28 h-28">
+              <p className="font-bold text-4xl">12+</p>
+              <p className="text-sm">years Experience</p>
+            </div>
+          </div>
+          <div className="absolute -bottom-12 -left-20 w-[296px] lg:w-[400px] lg:h-[300px] h-[233px] bg-darkBlue dark:bg-blue-800 -z-10 sm:mt-10 mt-[100px]" />
+        </div>
+        <AboutSec />
       </div>
     </section>
   );
