@@ -52,7 +52,7 @@ const QuerySec = () => {
       <form className="w-full max-w-2xl bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-md mx-auto">
         <Container
           title="Query Section"
-          h1="Got Questions? We’re Here to Help You Go Solar!"
+          h1="Got Questions? We’re Here to Help You Go Digital!"
           textAllign="text-center"
         />
 

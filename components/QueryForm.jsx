@@ -48,7 +48,7 @@ const QueryForm = () => {
       <form
         className={`*:my-2 pt-14 pb-36 md:max-w-[1000px] mx-auto text-white  `}
       >
-        <Conatiner
+        <Container
           title={"Query section"}
           h1={"Got Questions? We’re Here to Help You Go Solar!"}
           textAllign={"text-center px-20 pb-8"}
@@ -148,15 +148,15 @@ const QueryForm = () => {
             <span className="text-lg">9312644140</span>
           </button>
           <button
-            className={`${
-              variant === "sec"
-                ? "text-solarYellow px-3 hover:font-bold active:motion-preset-pop"
-                : "bg-gradient-to-r from-green/90 px-5 text-white  to-softgreen shadow shadow-text/20 hover:bg-gradient-to-r hover:from-green hover:to-softgreen/90 hover:shadow-lg hover:shadow-text/30 active:motion-preset-pop "
-            } capitalize  py-2 rounded `}
+            // className={`${
+            //   variant === "sec"
+            //     ? "text-solarYellow px-3 hover:font-bold active:motion-preset-pop"
+            //     : "bg-gradient-to-r from-green/90 px-5 text-white  to-softgreen shadow shadow-text/20 hover:bg-gradient-to-r hover:from-green hover:to-softgreen/90 hover:shadow-lg hover:shadow-text/30 active:motion-preset-pop "
+            // } capitalize  py-2 rounded `}
             onClick={handleClick}
           >
             <span className=" text-[16px] lg:text-[18px] ">Send Query</span>
-            {icon && icon}
+            {/* {icon && icon} */}
           </button>
         </div>
       </form>
