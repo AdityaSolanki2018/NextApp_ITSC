@@ -185,22 +185,22 @@ const page = () => {
                 src={"/icons/sustainability-icon.svg"}
                 width={80}
                 height={80}
-                alt="Sustainability"
+                alt="Security"
                 className="group-hover:hidden"
               />
               <Image
                 src={"/icons/sustainabilityWhite-icon.svg"}
                 width={80}
                 height={80}
-                alt="Sustainability"
+                alt="Security"
                 className="group-hover:block hidden"
               />
             </div>
             <h3 className="text-base sm:text-2xl font-bold mb-2 h1Text mt-2">
-              Sustainability
+              Security
             </h3>
             <p className=" group-hover:text-white pText">
-              Driving solutions that prioritize environmental well-being.
+              Driving solutions that prioritize your security.
             </p>
           </div>
 
@@ -211,14 +211,14 @@ const page = () => {
                 src={"/icons/innovation-icon.svg"}
                 width={80}
                 height={80}
-                alt="Sustainability"
+                alt="Innovation"
                 className="group-hover:hidden"
               />
               <Image
                 src={"/icons/innovationWhite-icon.svg"}
                 width={80}
                 height={80}
-                alt="Sustainability"
+                alt="Innovation"
                 className="group-hover:block hidden"
               />
             </div>
@@ -226,7 +226,7 @@ const page = () => {
               Innovation
             </h3>
             <p className="text-sm sm:text-base text-gray-600 group-hover:text-white pText">
-              Constantly evolving to offer state-of-the-art solar technologies.
+              Constantly evolving to offer state-of-the-art IT technologies.
             </p>
           </div>
 
@@ -237,14 +237,14 @@ const page = () => {
                 src={"/icons/customer-centric-icon.svg"}
                 width={85}
                 height={85}
-                alt="Sustainability"
+                alt="Customer-Centric Approach"
                 className="group-hover:hidden"
               />
               <Image
                 src={"/icons/customer-centricWhite-icon.svg"}
                 width={80}
                 height={80}
-                alt="Sustainability"
+                alt="Customer-Centric Approach"
                 className="group-hover:block hidden"
               />
             </div>
@@ -264,14 +264,14 @@ const page = () => {
                 src={"/icons/integrity-icon.svg"}
                 width={80}
                 height={80}
-                alt="Sustainability"
+                alt="Integrity"
                 className="group-hover:hidden"
               />
               <Image
                 src={"/icons/integrityWhite-icon.svg"}
                 width={80}
                 height={80}
-                alt="Sustainability"
+                alt="Integrity"
                 className="group-hover:block hidden"
               />
             </div>
@@ -284,31 +284,31 @@ const page = () => {
           </div>
 
           {/* Card 5 */}
-          {/* <div className="group lg:motion-preset-oscillate motion-duration-2000  hover:bg-teal-500 hover:text-white bg-[#FAFAFA] text-black p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ">
+          <div className="group lg:motion-preset-oscillate motion-duration-2000  hover:bg-blue hover:text-white bg-[#FAFAFA] text-black p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ">
           <div className="flex justify-center mb-4">
             <Image
               src={"/icons/integrity-icon.svg"}
               width={80}
               height={80}
-              alt="Sustainability"
+              alt="Providing Value"
               className="group-hover:hidden"
             />
             <Image
               src={"/icons/integrityWhite-icon.svg"}
               width={80}
               height={80}
-              alt="Sustainability"
+              alt="Providing Value"
               className="group-hover:block hidden"
             />
           </div>
           <h3 className="text-base sm:text-2xl font-bold mb-2 h1Text mt-2">
-            Integrity
+          Providing Value
           </h3>
           <p className="text-sm sm:text-base text-gray-600 group-hover:text-white pText">
             Partnering with customers and stakeholders to achieve shared
-            goals
+            goals and provide value.
           </p>
-        </div> */}
+        </div>
         </div>
       </section>
 
@@ -321,7 +321,7 @@ const page = () => {
           title={"Why Choose Us"}
           h1={
             <span>
-              Why We're The Best Choice For Expert Solar Panel Installation
+              Why We're The Best Choice For Expert IT Solutions
             </span>
           }
           h2={"Discover How We Stand Out In The World Of Renewable Energy"}
@@ -341,10 +341,10 @@ const page = () => {
                 />
               </div>
               <h3 className="text-base sm:text-xl font-bold mb-2">
-                100% Customizable Solar Plans
+                100% Customizable IT Plans
               </h3>
               <p className="text-sm sm:text-base text-gray-600 ">
-                Tailored Solutions Designed To Meet Your Energy Needs, Ensuring
+                Tailored Solutions Designed To Meet Your IT Needs, Ensuring
                 Maximum Efficiency
               </p>
             </div>
@@ -361,7 +361,7 @@ const page = () => {
                 />
               </div>
               <h3 className="text-base sm:text-xl font-bold mb-2">
-                Certified Solar Experts
+                Certified IT Experts
               </h3>
               <p className="text-sm sm:text-base text-gray-600">
                 Our Team Comprises Experienced And Accredited Professionals
@@ -454,10 +454,10 @@ const page = () => {
       </section>
 
       {/* leaders section */}
-      <section className="md:-mt-20 flex flex-col items-center bg-skyBlue py-8 md:py-20 px-6 md:px-[50px] lg:px-[150px]">
+      <section className="md:-mt-20 flex flex-col items-center bg-blue py-8 md:py-20 px-6 md:px-[50px] lg:px-[150px]">
         <Container
           title={"Leaders"}
-          h1={"The People Powering Renewable Energy"}
+          h1={"The People Powering IT Solutions"}
           textAllign={"text-center md:px-36"}
         />
         <div className="flex flex-col md:flex-row items-center justify-center gap-8  md:gap-28 my-16">
@@ -589,7 +589,7 @@ const page = () => {
           <Container
             title={"Our Statistics"}
             h1={"Our Impact in Numbers"}
-            h2={"Pioneering the future of solar energy with proven results"}
+            h2={"Pioneering the future of IT with proven results"}
             textAllign={"text-center md:text-start"}
           />
           <Image
@@ -610,7 +610,7 @@ const page = () => {
                 width="50%"
                 duration={1}
                 delay={0.2}
-                bgColor="bg-red-500"
+                bgColor="bg-blue"
               />
               <span>1000+</span>
             </div>
@@ -630,7 +630,7 @@ const page = () => {
           </div>
           <div>
             <h4 className="md:h2Text  md:mb-3 mb-1 text-lg">
-              Renewable Energy Generated
+              Secutity Solutions Provided
             </h4>
             <div className="flex gap-4 items-center text-lg font-semibold">
               <AnimatedDiv
@@ -657,14 +657,14 @@ const page = () => {
           </div>
           <div>
             <h4 className="md:h2Text  md:mb-3 mb-1 text-lg">
-              Carbon Footprint Reduced
+              Businesses Digitalized
             </h4>
             <div className="flex gap-4 items-center text-lg font-semibold">
               <AnimatedDiv
                 width="50%"
                 duration={1}
                 delay={0.2}
-                // bgColor="bg-red-500"
+                bgColor="bg-darkBlue"
               />
               <span>1000+</span>
             </div>
