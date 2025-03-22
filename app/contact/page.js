@@ -8,32 +8,28 @@ import { FiPhoneCall } from "react-icons/fi";
 
 function contact() {
   return (
-    <div className="min-h-screen relative overflow-hidden dark:bg-gray-900">
-      {/* Hero Section with Dark Mode Gradient */}
-      <Image
-        src="/images/herobg1.png"
-        width={720}
-        height={400}
-        alt="img"
-        className="-z-30 absolute w-full -top-4 h-[380px] md:min-h-[550px] blur-sm opacity-90 dark:opacity-90"
-      />
-
-      <div className="absolute lg:-top-[78px] -top-[140px] -left-6 -right-5 z-10">
-        <div className="bg-[#FAFAFA] dark:bg-gray-800 relative h-52 -rotate-[3deg] min-w-[500px]">
-          <div className="bg-[#FAFAFA] dark:bg-gray-800 absolute lg:bottom-0 lg:left-24 bottom-1 rotate-[42deg] h-28 lg:w-56 w-36 rounded-xl -z-10" />
-        </div>
+    <div className="min-h-screen relative overflow-hidden bg-white dark:bg-gray-900">
+      {/* Hero Background */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/herobg1.png"
+          width={1920}
+          height={1080}
+          alt="Hero Background"
+          className="w-full h-[380px] md:h-[550px] object-cover opacity-100 dark:opacity-70"
+        />
       </div>
 
-      {/* Light-to-Dark Mode Background Element */}
-      <div className="h-28 bg-[#FAFAFA] dark:bg-gray-800 absolute -left-2 -right-5 z-10 top-[290px] md:top-[475px] -rotate-[4deg]" />
+      {/* Debugging border (Remove after testing) */}
+      <div className="absolute inset-0 border-2 border-green-500 z-10" />
 
       {/* Page Heading */}
-      <div className="flex flex-col pt-32 md:pt-56 justify-center items-center gap-4 md:gap-8">
+      <div className="relative flex flex-col pt-32 md:pt-56 justify-center items-center gap-4 md:gap-8 z-20">
         <h1 className="h1Text md:h1TextLg text-solarYellow">Contact Us</h1>
         <div className="flex divide-x-4 divide-solarYellow *:px-3 md:h2TextLg h2Text">
           <Link
             href="/"
-            className="text-gray-300 dark:text-gray-300 hover:text-solarYellow transition"
+            className="text-gray-600 dark:text-gray-300 hover:text-solarYellow transition"
           >
             Home
           </Link>
@@ -41,71 +37,17 @@ function contact() {
         </div>
       </div>
 
-      {/* Contact Information Section */}
-      <div className="mt-32 md:mt-44 mb-20 mx-8 md:mx-20 lg:mx-32 z-20 *:py-6 relative">
+      {/* Contact Information */}
+      <div className="relative mt-40 my-20 md:mt-44 mb-20 mx-8 md:mx-20 lg:mx-32 z-20">
         <FiPhoneCall className="absolute -right-5 md:right-36 -rotate-12 size-32 md:size-48 text-deepTeal/20 dark:text-solarYellow/30 -top-10 md:-top-12" />
         <Container
           title="Contact Us"
           h1="Let’s Power Your Future Together."
-          h2="Have questions? Want to start your solar journey? We’re here to help."
+          h2="Have questions? Want to start your IT journey? We’re here to help."
           textAllign="text-center md:mx-40"
         />
-
-        {/* Contact Details Cards */}
-        <div className="flex flex-col text-gray-900 dark:text-white md:grid md:grid-cols-2 md:gap-6 gap-3 *:flex *:flex-col *:gap-2 *:items-center *:justify-center px-16 md:px-36 w-fit mx-auto *:md:w-[400px] text-center *:p-5 *:h-[220px]">
-          {/* Address Card */}
-          <span className="bg-lightBlue dark:bg-lightBlue rounded-md transform transition-transform duration-300 ease-in-out hover:scale-110 shadow-lg hover:shadow-solarYellow/40">
-            <Image
-              src="/icons/addresssvg.svg"
-              width={40}
-              height={40}
-              alt="Address Icon"
-            />
-            <h1 className="h1Text mt-2">Address</h1>
-            <p className="pText">Company Regd. Address</p>
-            <span className="pText">
-              B-210, Veer Complex, Green Field Colony, Faridabad, Haryana - 121010 (India)
-            </span>
-          </span>
-
-          {/* Phone Number Card */}
-          <span className="bg-blue dark:blue rounded-md transform transition-transform duration-300 ease-in-out hover:scale-110 shadow-lg hover:shadow-solarYellow/40">
-            <Image
-              src="/icons/Phone.svg"
-              width={40}
-              height={40}
-              alt="Phone Icon"
-            />
-            <h1 className="h1Text mt-2">Phone Number</h1>
-            <p className="pText">Enquiry: 9818646026</p>
-            <p className="pText">Customer Support: 7827124622</p>
-          </span>
-
-          {/* Email Card */}
-          <span className="bg-blue dark:bg-blue rounded-md transform transition-transform duration-300 ease-in-out hover:scale-110 shadow-lg hover:shadow-solarYellow/40">
-            <Image
-              src="/icons/emailsvg.svg"
-              width={40}
-              height={40}
-              alt="Email Icon"
-            />
-            <h1 className="h1Text mt-2">Email</h1>
-            <p className="">mahesh.solanki@gmail.com</p>
-          </span>
-
-          {/* Timings Card */}
-          <span className="bg-lightBlue dark:bg-lightBlue rounded-md transform transition-transform duration-300 ease-in-out hover:scale-110 shadow-lg hover:shadow-solarYellow/40">
-            <Image
-              src="/icons/timingsvg.svg"
-              width={50}
-              height={50}
-              alt="Timings Icon"
-            />
-            <h1 className="h1Text">Timings</h1>
-            <p className="pText">Monday to Friday: 9 AM - 6 PM</p>
-          </span>
-        </div>
       </div>
+
       <QuerySec />
     </div>
   );

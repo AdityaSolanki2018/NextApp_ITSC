@@ -35,7 +35,7 @@ const QuerySec = () => {
   return (
     <div className="relative flex justify-end px-8 md:px-24 my-8">
       <Image
-        src="/icons/queryillus.svg"
+        src="/icons/query-svg.svg"
         width={300}
         height={300}
         alt="Illustration"
@@ -57,85 +57,93 @@ const QuerySec = () => {
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="input-field">
-            <FaUser className="input-icon" />
+          <div className="flex items-center border rounded-md p-2 focus-within:border-teal-500">
+            <FaUser className="text-gray-500 size-5 mr-2" />
             <input
               type="text"
               name="name"
               value={query.name}
               onChange={handleChange}
               placeholder="Full Name"
-              className="input bg-gray-100 dark:bg-gray-700 dark:text-white"
+              className="w-full outline-none bg-transparent"
             />
           </div>
 
-          <div className="input-field">
-            <FaPhone className="input-icon" />
+          <div className="flex items-center border rounded-md p-2 focus-within:border-teal-500">
+            <FaPhone className="text-gray-500 size-5 mr-2" />
             <input
               type="number"
               name="number"
               value={query.number}
               onChange={handleChange}
               placeholder="Phone Number"
-              className="input bg-gray-100 dark:bg-gray-700 dark:text-white"
+              className="w-full outline-none bg-transparent"
             />
           </div>
 
-          <div className="input-field col-span-1 md:col-span-2">
-            <MdEmail className="input-icon" />
+          <div className="flex items-center border rounded-md p-2 focus-within:border-teal-500 col-span-1 md:col-span-2">
+            <MdEmail className="text-gray-500 size-5 mr-2" />
             <input
               type="email"
               name="email"
               value={query.email}
               onChange={handleChange}
               placeholder="Email"
-              className="input bg-gray-100 dark:bg-gray-700 dark:text-white"
+              className="w-full outline-none bg-transparent"
             />
           </div>
 
           <div className="col-span-1 md:col-span-2">
-            <select
-              name="type"
-              value={query.type}
-              onChange={handleChange}
-              className="input bg-gray-100 dark:bg-gray-700 dark:text-white"
+          <select
+              name="dropdown"
+              defaultValue=""
+              className="w-full capitalize bg-transparent p-2.5 h-full focus:outline-none"
             >
-              <option value="" disabled hidden>
-                Type of Inquiry
+              <option 
+              value={query.type}
+              onChange={(e)=>(setQuery({...query, type:e.target.value.toUpper()}))}
+               disabled hidden>
+                <span className="dark:text-gray-300">Type of inquiry</span>
               </option>
-              <option value="consultation">Consultation</option>
-              <option value="design">Design</option>
-              <option value="maintenance">Maintenance</option>
-              <option value="installation">Installation</option>
+              <option value="consultation" className="bg-white dark:bg-gray-800 dark:text-gray-300">
+                Consultation
+              </option>
+              <option value="design" className="bg-white dark:bg-gray-800 dark:text-gray-300">
+                Design
+              </option>
+              <option value="maintanence" className="bg-white dark:bg-gray-800 dark:text-gray-300">
+                Maintanence
+              </option>
+              <option value="installation" className="bg-white dark:bg-gray-800 dark:text-gray-300">
+                Installation
+              </option>
             </select>
           </div>
         </div>
 
-        <div className="input-field mt-4">
+        {/* Text Area */}
+        <div className="border rounded-md p-2 focus-within:border-teal-500">
           <textarea
             name="userQuery"
             rows={4}
             value={query.userQuery}
-            onChange={handleChange}
-            placeholder="Tell us more about your needs or questions..."
-            className="input resize-none bg-gray-100 dark:bg-gray-700 dark:text-white"
+            onChange={(e) => {
+              console.log(query);
+              setQuery({ ...query, userQuery: e.target.value });
+            }}
+            placeholder="Tell us more about your needs or questions.."
+            className="w-full outline-none bg-transparent resize-none"
           />
         </div>
-
-        <div className="flex justify-end mt-4">
+        <div className="float-right md:py-3 py-2  px-10 md:px-28">
           <Button
-            text={loading ? "Submitting..." : "Send Query"}
+            text={"Send Query"}
             handleClick={(e) => {
               e.preventDefault();
-              handleClick();
+              handleClick(query);
             }}
-            disabled={loading}
           />
         </div>
-
-        {loading && (
-          <div className="text-center text-teal-600 mt-2">Submitting...</div>
-        )}
       </form>
     </div>
   );

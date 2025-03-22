@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import Header from "@/components/Header";
-
+import Footer from "@/components/Footer";
 export const metadata = {
   title:
     "Top CCTV and IT Solutions in Faridabad | Server Maintenance, Networking and Firewall Solutions for your Business",
@@ -13,6 +13,7 @@ export default function RootLayout({ children }) {
       <body className={``}>
         <Header />
         {children}
+        <Footer/>
       </body>
     </html>
   );

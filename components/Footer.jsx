@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="text-white *:max-w-[390px] md:flex-row md:justify-between flex-col flex gap-7 bg-deepTeal py-8 px-14 lg:p-24 relative overflow-hidden">
+    <div className="text-white *:max-w-[390px] md:flex-row md:justify-between flex-col flex gap-7 bg-blue py-8 px-14 lg:p-24 relative overflow-hidden">
       <Image
         src={"/icons/footerillus.svg"}
         width={112}
@@ -16,11 +16,10 @@ const Footer = () => {
       <div className="">
         <h1 className="h1Text md:pb-2">About us</h1>
         <p className="pText md:pTextLg border-b border-white/30 py-2 text-white/80">
-          Annual savings of $18,000 on electricity costs. Boosted company’s
-          green credentials with a 35% reduction in carbon footprint
+          Making India Digital with 25+ years of rich IT industry Explerience.
         </p>
         <p className="pt-3 text-white/80">
-          Copyright © 2024 BVB All rights reserved.
+          Copyright © 2024 IT Solutions and Comsultancy All rights reserved.
         </p>
       </div>
       <div>
@@ -39,15 +38,15 @@ const Footer = () => {
           Company Regd. Add -
         </p>
         <p className="pText md:pTextLg pt-2 text-white/80">
-          F-12 Ground floorviswakarma colony,new delhi 110044(India){" "}
+        B-210, Veer Complex, Green Field Colony, Faridabad, Haryana - 121010 (India){" "}
         </p>
         <p className=" pt-2 lowercase pText md:pTextLg text-white/80 flex items-center">
           <MdEmail className="inline-flex size-6 mr-1" />
-          <span> contactbdbvpl@gmail.com </span>
+          <span> mahesh.solanki@gmail.com </span>
         </p>
         <p className="pText md:pTextLg pt-2 text-white/80 flex items-center">
           <FaPhone className="inline-flex size-5 mr-2" />
-          <span>9312644140 </span>
+          <span>9818646026 </span>
         </p>
       </div>
     </div>

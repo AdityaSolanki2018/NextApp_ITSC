@@ -35,21 +35,6 @@ const AboutSec = () => {
         }
         textAllign={"text-center md:text-start"}
       />
-      {/* <ul className="list-disc pText md:pTextLg space-y-2 mb-6 lg:mb-10 list-inside  mt-3 lg:mt-5">
-        <li>
-          Significantly reduce carbon footprints and contribute to a more
-          sustainable and eco-friendly environment for future generations.
-        </li>
-        <li>
-          Enable individuals and businesses to achieve energy independence by
-          harnessing the limitless power of solar energy.
-        </li>
-        <li>
-          Provide cutting-edge, customized solar solutions designed to meet the
-          unique energy needs of our clients, ensuring optimal efficiency,
-          savings, and long-term reliability.
-        </li>
-      </ul> */}
       <Link href={"/aboutus"}>
         <Button
           text={"More about us"}

@@ -38,7 +38,7 @@ const settings = {
 };
 const page = () => {
   return (
-    <div className="min-h-screen w-screen relative overflow-hidden -z-30 dark:bg-gray-900">
+    <div className="min-h-screen relative overflow-hidden dark:bg-gray-900">
       {/* Hero Section */}
       <div className="absolute -top-6 -z-20">
         <Image
@@ -46,7 +46,7 @@ const page = () => {
           width={720}
           height={400}
           alt="rect"
-          className="block min-h-[380px max-h-[550px] w-screen blur-sm dark:bg-gray-900"
+          className="-z-30 absolute w-full -top-4 h-[380px] md:min-h-[550px] blur-sm opacity-90 dark:opacity-90"
         />
 
         {/* try */}
@@ -57,20 +57,6 @@ const page = () => {
           </div>
         </div>
       </div>
-      {/* <Image
-        src={"/images/herobg1.png"}
-        width={720}
-        height={400}
-        alt="img"
-        className="-z-30 absolute w-full -top-4 h-[380px] md:min-h-[550px]"
-      /> */}
-
-      {/* upper divs */}
-      {/* <div className="absolute lg:-top-[78px] -top-[140px]  -left-6 -right-5 z-10">
-        <div className="bg-[#FAFAFA]  relative h-52 -rotate-[3deg] min-w-[500px]">
-          <div className="bg-[#FAFAFA] absolute lg:bottom-0 lg:left-24 bottom-1 rotate-[42deg] h-28 lg:w-56 w-36 rounded-xl -z-10" />
-        </div>
-      </div> */}
 
       <div className="h-28 bg-[#FAFAFA] dark:bg-gray-900 absolute -left-2 -right-5 z-10 top-[290px] md:top-[475px] -rotate-[4deg]" />
       <div className="flex flex-col pt-32 md:pt-56 justify-center items-center gap-4 md:gap-8">
@@ -97,12 +83,12 @@ const page = () => {
           h1={
             <span>
               Your <span className="text-blue">Trusted</span> Partner in{" "}
-              <span className="text-solarYellow">IT Insfrastructure and Services</span>
+              <span className="text-solarYellow">
+                IT Insfrastructure and Services
+              </span>
             </span>
           }
-          h2={
-            "Learn about our journey and how we bring IT solutions to life."
-          }
+          h2={"Learn about our journey and how we bring IT solutions to life."}
           textAllign={"text-center md:max-w-[700px] mx-auto"}
         />
         <div
@@ -142,9 +128,7 @@ const page = () => {
             </div>
           </div>
           <div className="md:min-w-[630px] z-10  w-[300px] pText p-2 md:p-3 border-4 border-white bg-deepTeal text-white">
-            <p>
-              
-            </p>
+            <p></p>
           </div>
         </div>
       </div>
@@ -153,20 +137,12 @@ const page = () => {
       {/* Content */}
       <section
         id="Mission"
-        style={{ backgroundImage: "url('/images/abgimg.png')" }}
+        style={{ backgroundImage: "url('/images/abgimg.jpg')" }}
         className="relative py-10 sm:py-14 lg:py-20 min-h-[600px] my-[50px] md:my-[100px]  bg-cover bg-center bg-no-repeat  z-10  mx-auto text-center px-4 sm:px-6 lg:px-8 text-white"
       >
         {/* Overlay */}
         <div className="bg-black/50 hidden md:block absolute inset-0"></div>
         {/* image blob */}
-        <Image
-          src={"/images/visionBlob.png"}
-          width={340}
-          height={300}
-          alt="img"
-          className="absolute top-17 hidden md:block right-3 "
-        />
-
         <Container
           title={"Our Mission and Values"}
           h1={<span>Driven By Purpose, Guided By Principles.</span>}
@@ -285,30 +261,30 @@ const page = () => {
 
           {/* Card 5 */}
           <div className="group lg:motion-preset-oscillate motion-duration-2000  hover:bg-blue hover:text-white bg-[#FAFAFA] text-black p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ">
-          <div className="flex justify-center mb-4">
-            <Image
-              src={"/icons/integrity-icon.svg"}
-              width={80}
-              height={80}
-              alt="Providing Value"
-              className="group-hover:hidden"
-            />
-            <Image
-              src={"/icons/integrityWhite-icon.svg"}
-              width={80}
-              height={80}
-              alt="Providing Value"
-              className="group-hover:block hidden"
-            />
+            <div className="flex justify-center mb-4">
+              <Image
+                src={"/icons/integrity-icon.svg"}
+                width={80}
+                height={80}
+                alt="Providing Value"
+                className="group-hover:hidden"
+              />
+              <Image
+                src={"/icons/integrityWhite-icon.svg"}
+                width={80}
+                height={80}
+                alt="Providing Value"
+                className="group-hover:block hidden"
+              />
+            </div>
+            <h3 className="text-base sm:text-2xl font-bold mb-2 h1Text mt-2">
+              Providing Value
+            </h3>
+            <p className="text-sm sm:text-base text-gray-600 group-hover:text-white pText">
+              Partnering with customers and stakeholders to achieve shared goals
+              and provide value.
+            </p>
           </div>
-          <h3 className="text-base sm:text-2xl font-bold mb-2 h1Text mt-2">
-          Providing Value
-          </h3>
-          <p className="text-sm sm:text-base text-gray-600 group-hover:text-white pText">
-            Partnering with customers and stakeholders to achieve shared
-            goals and provide value.
-          </p>
-        </div>
         </div>
       </section>
 
@@ -319,11 +295,7 @@ const page = () => {
       >
         <Container
           title={"Why Choose Us"}
-          h1={
-            <span>
-              Why We're The Best Choice For Expert IT Solutions
-            </span>
-          }
+          h1={<span>Why We're The Best Choice For Expert IT Solutions</span>}
           h2={"Discover How We Stand Out In The World Of Renewable Energy"}
           textAllign={"text-center "}
         />
@@ -390,67 +362,6 @@ const page = () => {
             </div>
           </Slider>
         </div>
-        {/* <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 py-10 mx-[50px] lg:px-[50px] min-h-[200px]"> */}
-        {/* Card 1 */}
-        {/* <div className="border-green border-2 bg-[#FAFAFA] text-black p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 min-w-[100px] min-h-[150px]">
-          <div className="flex justify-center mb-4">
-            <Image
-              src={"/icons/Group.png"}
-              width={100}
-              height={100}
-              alt="Integrity"
-              className="w-[100px] h-[100px] "
-            />
-          </div>
-          <h3 className="text-base sm:text-xl font-bold mb-2">
-            100% Customizable Solar Plans
-          </h3>
-          <p className="text-sm sm:text-base text-gray-600 ">
-            Tailored Solutions Designed To Meet Your Energy Needs, Ensuring
-            Maximum Efficiency
-          </p>
-        </div> */}
-
-        {/* Card 2 */}
-        {/* <div className="border-green  border-2 bg-[#FAFAFA] text-black p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <div className="flex justify-center mb-4">
-            <Image
-              src={"/icons/Group (1).png"}
-              width={100}
-              height={100}
-              alt="Integrity"
-              className="w-[100px] h-[100px] "
-            />
-          </div>
-          <h3 className="text-base sm:text-xl font-bold mb-2">
-            Certified Solar Experts
-          </h3>
-          <p className="text-sm sm:text-base text-gray-600">
-            Our Team Comprises Experienced And Accredited Professionals
-            Dedicated To Excellence.
-          </p>
-        </div> */}
-
-        {/* Card 3 */}
-        {/* <div className="border-green border-2 bg-[#FAFAFA] text-black p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <div className="flex justify-center mb-4">
-            <Image
-              src={"/icons/Group (2).png"}
-              width={100}
-              height={100}
-              alt="Integrity"
-              className="w-[100px] h-[100px] "
-            />
-          </div>
-          <h3 className="text-base sm:text-xl font-bold mb-2">
-            24/7 Customer Support
-          </h3>
-          <p className="text-sm sm:text-base text-gray-600">
-            We're Here To Assist You Anytime, Ensuring A smooth And
-            Hassle-Free Experience.
-          </p>
-        </div>
-      </div> */}
       </section>
 
       {/* leaders section */}
@@ -577,12 +488,19 @@ const page = () => {
 
       {/* Statistics */}
       <section className="my-8 relative flex flex-col gap-6 md:items-end md:flex-row items-center px-8 md:px-28  py-8 md:py-16 ">
-        <Image
-          src={"/icons/sun-svg.svg"}
-          width={480}
-          height={400}
+        {/* <Image
+          src={"/icons/cctv.svg"}
+          width={150}
+          height={150}
           alt="panel"
           className="md:block hidden absolute -top-20 right-20"
+        /> */}
+        <Image
+          src={"/icons/cctv.svg"}
+          width={150}
+          height={150}
+          alt="panel"
+          className="md:block hidden absolute -top-20 right-0"
         />
 
         <div className="md:max-w-[700px] space-y-6">
@@ -593,8 +511,8 @@ const page = () => {
             textAllign={"text-center md:text-start"}
           />
           <Image
-            src={"/icons/solarPanel-svg.svg"}
-            width={480}
+            src={"/icons/computer-and-people.svg"}
+            width={450}
             height={400}
             alt="panel"
             className="md:block hidden"
