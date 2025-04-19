@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import Conatiner from '../Conatiner'
+import Container from "@/components/Container";
 import { testimonials } from '@/constants/dummy';
 import { Rating } from '@mui/material';
 
@@ -34,7 +34,7 @@ const Testimonials = () => {
         <Image src={"/images/grp.png"} width={725} height={750} alt='img' className='hidden md:block motion-scale-in-[1.63] motion-translate-x-in-[3%] motion-translate-y-in-[8%] motion-opacity-in-[0%] motion-blur-in-[5px] motion-duration-[0.35s] motion-duration-[0.53s]/scale motion-duration-[0.53s]/translate motion-ease-spring-bouncier ' /> 
       </div>
       <div className="flex flex-col">
-        <Conatiner
+        <Container
           title={"Testimonials"}
           h1={"Shining Light on Our Happy Clients"}
           textAllign={"my-8 text-start"}
